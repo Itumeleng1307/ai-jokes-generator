@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css">
     <title>AI Jokes Generator</title>
 </head>
@@ -18,7 +19,7 @@
     </header>
 
     <main>
-        <form>
+        <form id="poem-generator-form">
             <input type="text" placeholder="Enter topic of poem"
             autofocus
             required
@@ -27,13 +28,7 @@
             />
             <input type="submit" class="button"/>
         </form>
-        <div class="poem">
-            Having somewhere to go is home. 
-            <br/>
-            Having someone to love is family. 
-            <br/>
-            And having both is a blessing.
-
+        <div class="poem" id="poem">
         </div>
     </main>
 
