@@ -77,8 +77,12 @@ form {
     
 }
 
+.poem strong {
+    color: rgb(207, 9, 42);
+}
+
 a {
-    color: #7a4318;
+    color: rgb(207, 9, 42);
 }
 footer {
     text-align: center;

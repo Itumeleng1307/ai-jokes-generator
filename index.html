@@ -7,14 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/styles.css">
-    <title>AI Jokes Generator</title>
+    <title>AI Poem Generator</title>
 </head>
 <body>
  <div class="container">
     <header>
     <h1>
-        Welcome to the AI Jokes Generator
+        Welcome to the AI Poem Generator
     </h1>
     </header>
 
@@ -25,6 +27,7 @@
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
             />
             <input type="submit" class="button"/>
         </form>
