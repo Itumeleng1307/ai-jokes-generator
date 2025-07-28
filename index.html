@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles.css">
     <title>AI Jokes Generator</title>
 </head>
 <body>
+ <div class="container">
     <header>
     <h1>
         Welcome to the AI Jokes Generator
@@ -19,13 +23,16 @@
             autofocus
             required
             autocomplete="off"
+            class="instructions"
             />
-            <input type="submit" />
+            <input type="submit" class="button"/>
         </form>
-        <div>
-            Having somewhere to go is home. Having someone to love is family. 
+        <div class="poem">
+            Having somewhere to go is home. 
             <br/>
-            And having both is a blessing
+            Having someone to love is family. 
+            <br/>
+            And having both is a blessing.
 
         </div>
     </main>
@@ -36,6 +43,7 @@
         <a href="https://github.com/Itumeleng1307/ai-jokes-generator" target="_blank">open-sourced on Github</a>
         and is hosted on <a href="https://itumeleng-ai-jokes-generator.netlify.app/" target="_blank">Netlify</a>
     </footer>
+</div>
     <script src="src/script.js"></script>
 </body>
 </html> 
