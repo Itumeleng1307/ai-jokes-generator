@@ -31,13 +31,23 @@ h1 {
     color: white;
 }
 
-form {
-    padding: 30px;
+.form-container {
     background-color: #f9d7ad51;
-    border-radius: 10px;
-    display: flex;
     box-shadow: 10px 10px 5px #b46f3a;
-    margin: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.hint {
+    line-height: 1.5;
+    font-size: 13px;
+    margin-top: 10px;
+    opacity: 0.6;;
+}
+
+form {  
+    display: flex;
 }
 
 .instructions {
@@ -72,11 +82,13 @@ form {
     margin: 0 auto;
     color: white;
     line-height: 1.5;
-    border-left: 3px solid #deaa82;
-    
-    
+    border-left: 3px solid #deaa82;   
 }
 
+/* To hide style when page loads. Style will only display once poem is generated */
+.hidden {
+    display: none;
+}
 .poem strong {
     color: rgb(207, 9, 42);
 }
@@ -91,3 +103,38 @@ footer {
     font-size: 10px;
     padding: 20px;
 }
+
+/* Add Spinner while loading / generating poem - added div. loader in html */
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid white;
+    border-radius: 50%;
+    border-top: 16px solid #db6205;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    } }
